@@ -1,0 +1,75 @@
+/* ==========================
+   VARIÁVEIS CSS
+========================== */
+
+:root {
+  /* Tamanhos de fonte */
+  --fonte-h1: 24px;
+  --fonte-h2: 18px;
+  --fonte-texto: 14px;
+
+  /* Espaçamentos */
+  --espacamento-section: 15px;
+  --espacamento-p: 10px;
+}
+
+/* ==========================
+   ESTILO GERAL
+========================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: var(--espacamento-section);
+}
+
+h1 {
+  font-size: var(--fonte-h1);
+}
+
+h2 {
+  font-size: var(--fonte-h2);
+  margin-bottom: var(--espacamento-p);
+}
+
+p {
+  font-size: var(--fonte-texto);
+}
+
+section {
+  margin-bottom: var(--espacamento-section);
+}
+
+/* ==========================
+   MEDIA QUERY - TELAS MÉDIAS
+========================== */
+
+@media (min-width: 768px) {
+  :root {
+    --fonte-h1: 32px;
+    --fonte-h2: 22px;
+    --fonte-texto: 16px;
+
+    --espacamento-section: 25px;
+    --espacamento-p: 15px;
+  }
+}
+
+/* ==========================
+   MEDIA QUERY - TELAS GRANDES
+========================== */
+
+@media (min-width: 1024px) {
+  :root {
+    --fonte-h1: 40px;
+    --fonte-h2: 26px;
+    --fonte-texto: 18px;
+
+    --espacamento-section: 35px;
+    --espacamento-p: 20px;
+  }
+}

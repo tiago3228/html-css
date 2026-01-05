@@ -1,0 +1,116 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Formulário */
+.formulario {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Título */
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Campos */
+.campo {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Ícones com ::before */
+.usuario::before {
+  content: "👤";
+  position: absolute;
+  left: 10px;
+  top: 35px;
+}
+
+.senha::before {
+  content: "🔒";
+  position: absolute;
+  left: 10px;
+  top: 35px;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito visual com ::after */
+button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button:hover::after {
+  opacity: 1;
+}
+
+/* RESPONSIVIDADE */
+
+/* Mobile */
+@media (max-width: 599px) {
+  .formulario {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .formulario {
+    width: 400px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .formulario {
+    width: 350px;
+  }
+}

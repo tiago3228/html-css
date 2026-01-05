@@ -1,0 +1,21 @@
+/* Contêiner flexível */
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  min-height: 300px;       /* Altura mínima para visualizar o alinhamento */
+  background-color: #f0f0f0;
+  gap: 20px;
+}
+
+/* Caixas */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #2F5D50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
